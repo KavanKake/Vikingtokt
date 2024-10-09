@@ -72,18 +72,29 @@ body {
     font-size: 1.2rem;
 }
 
-
 .skjema {
     display: flex;
-    position: absolute;
-    justify-content: right; /* Change from 'right' to 'left' */
-    align-items: center; /* Keeps the content aligned to the bottom within the box */
-
-    width: 35%;
-    height: 75%; 
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center children horizontally */
+    position: absolute;     /* Position relative to parent */
+    right: 20vh;           /* Position it to the right */
+    width: 30%;            /* Set width for the box */
+    height: 75%;           /* Set height for the box */
     background-color: rgb(34, 37, 67);
-    z-index: 2;
-
-    right: 20vh ; /* Anchor the box to the left */
-
+    z-index: 2;            /* Ensure it stays on top */
 }
+
+.box {
+    width: 100%;           /* Full width of the skjema */
+    padding: 20px;        /* Padding inside the box */
+}
+
+.box-title {
+    text-align: center;    /* Center the title */
+    font-size: 1.5rem;     /* Font size for the title */
+    margin-bottom: 10px;   /* Space below the title */
+}
+
+
+
+
