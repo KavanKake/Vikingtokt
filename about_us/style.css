@@ -16,8 +16,12 @@ body {
     z-index: 2; /* Higher z-index to stay above the overlay */
     position: relative; /* Ensure the z-index applies correctly */
     display: flex; /* Use flexbox */
-    justify-content: right; /* Center content horizontally */
+    justify-content: space-between; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+}
+
+.nav-links {
+    display: flex;
 }
 
 .navbar a {
@@ -33,4 +37,11 @@ body {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.logo_navbar {
+    height: auto;
+    width: 3rem; /* Adjust size as needed */
+    display: flex;
+    justify-content: left; 
 }
