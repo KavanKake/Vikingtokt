@@ -95,6 +95,37 @@ body {
     margin-bottom: 10px;   /* Space below the title */
 }
 
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 10px; /* Space between form elements */
+}
+
+label {
+    font-size: 1rem; /* Font size for labels */
+}
+
+input, select {
+    padding: 10px; /* Padding for inputs */
+    font-size: 1rem; /* Font size for inputs */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    padding: 10px; /* Padding for button */
+    font-size: 1rem; /* Font size for button */
+    background-color: #333; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
 
 
 
