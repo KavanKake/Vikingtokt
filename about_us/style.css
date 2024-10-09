@@ -45,3 +45,54 @@ body {
     display: flex;
     justify-content: left; 
 }
+
+.container1 {
+    display: flex;
+    justify-content: space-around; /* Space circles evenly */
+    align-items: center;
+    padding: 20px; /* Padding for container */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around; /* Space circles evenly */
+    align-items: center;
+    padding: 20px; /* Padding for container */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.circle {
+    width: 20rem; /* Fixed width for circles */
+    height: 20rem; /* Fixed height for circles */
+    border-radius: 50%; /* Make the div circular */
+    overflow: hidden; /* Hide overflow for the image */
+    border: 2px solid #333; /* Optional border */
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 20px; /* Margin around each circle */
+}
+
+.bilde1 {
+    width: 100%; /* Make the image fill the circle */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+.bilde2 {
+    width: 150%; /* Make the image fill the circle */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    
+    
+}
+
+.caption {
+    margin-top: 10px; /* Space between image and caption */
+    text-align: center; /* Center text under the image */
+    font-size: 1rem; /* Font size for captions */
+    color: #333; /* Darker text color for contrast */
+}
