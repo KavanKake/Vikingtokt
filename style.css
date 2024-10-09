@@ -33,3 +33,24 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+.spacer{
+    width: 100vw; 
+    height: 3vh; 
+}
+
+.centered{
+    display:flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    
+}
+
+.title{
+    font-size: 6vw;
+}
+
+.undertitle{
+    font-size: 2vw; 
+}
+
