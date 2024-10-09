@@ -9,9 +9,13 @@ body {
     background-color: orange;
 }
 
+/* Navbar Styling */
 .navbar {
     background-color: #333;
     overflow: hidden;
+    height: 8vh;
+    z-index: 2; /* Higher z-index to stay above the overlay */
+    position: relative; /* Ensure the z-index applies correctly */
 }
 
 .navbar a {
@@ -26,4 +30,60 @@ body {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('../bilder/Vikingskip_joinus.jpg'); /* Replace this with the correct image path */
+    background-size: cover;
+    background-position: center;
+    height: 92vh; /* Adjust height to account for the navbar (100vh - 8vh) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative; /* So the overlay applies only to the hero section */
+    z-index: 1; /* Lower than navbar */
+}
+
+/* Color overlay */
+.color-overlay {
+    position: absolute; /* Use absolute so it only covers the .hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    z-index: 1; /* Keep it under the navbar */
+}
+
+.hero-text {
+    margin-left: 50px;
+    max-width: 500px;
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+
+.skjema {
+    display: flex;
+    position: absolute;
+    justify-content: right; /* Change from 'right' to 'left' */
+    align-items: center; /* Keeps the content aligned to the bottom within the box */
+
+    width: 35%;
+    height: 75%; 
+    background-color: rgb(34, 37, 67);
+    z-index: 2;
+
+    right: 20vh ; /* Anchor the box to the left */
+
 }
