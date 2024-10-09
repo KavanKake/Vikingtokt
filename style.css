@@ -58,10 +58,14 @@ body {
 }
 
 .title{
-    font-size: 6vw;
+    font-size: 5.3vw;
 }
 
 .undertitle{
     font-size: 2vw; 
 }
 
+.pic{
+    object-fit: cover; 
+    width: 40vw; 
+}
