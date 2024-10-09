@@ -44,27 +44,36 @@ body {
     justify-content: center;
 
     width: 100vw; 
-    height: 100vh; 
+    height: 75vh; 
 }
 
 .shop{
     display: flex; 
     justify-content: space-between;
+    flex-wrap: wrap;
 
     align-items: center;
+    padding-top: 2%;
+    padding-bottom: 4%; 
+    padding-left: 4%;
+    padding-right: 4%;
 
-    padding: 50px; 
     width: 70%; 
-    height: 70%; 
-    background-color: red;
+    height: 90%; 
+    background-color: rgb(70, 91, 255, 50%);
     box-sizing: border-box;
 }
 
 .shop_element{
 
     
-    width: 24%; 
+    width: 27%; 
     height: 80%; 
     background-color: wheat;
+}
+
+#title{
+    font-size: 3rem;
+    width: 100%; 
 }
 
