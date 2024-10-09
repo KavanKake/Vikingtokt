@@ -11,15 +11,22 @@ body {
 .navbar {
     background-color: #333;
     overflow: hidden;
+    height: 8vh;
+    z-index: 2; /* Higher z-index to stay above the overlay */
+    position: relative; /* Ensure the z-index applies correctly */
+    display: flex; /* Use flexbox */
+    justify-content: right; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 20px;
+    padding: 20px 20px;
     text-decoration: none;
+    font-size: 1rem; /* You can adjust the font size if needed */
+    margin-right: 1vw;
 }
 
 .navbar a:hover {

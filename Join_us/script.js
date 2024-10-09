@@ -1,4 +1,3 @@
-
 function validateForm() {
     const fullname = document.getElementById("fullname").value;
     const dob = document.getElementById("dob").value;
@@ -12,12 +11,25 @@ function validateForm() {
         return false; // Prevent form submission
     }
 
-    alert("Form submitted successfully!");
-    console.log(fullname);
-    console.log(dob);
-    console.log(email);
-    console.log(phone);
-    console.log(gender);
+    // Save data to local storage
+    localStorage.setItem("fullname", fullname);
+    localStorage.setItem("dob", dob);
+    localStorage.setItem("email", email);
+    localStorage.setItem("phone", phone);
+    localStorage.setItem("gender", gender);
 
-    return true; // Allow form submission
+    alert("Form submitted successfully!");
+
+    // Optionally, display the saved information
+    console.log("Saved Information:");
+    console.log("Full Name:", localStorage.getItem("fullname"));
+    console.log("Date of Birth:", localStorage.getItem("dob"));
+    console.log("Email:", localStorage.getItem("email"));
+    console.log("Phone:", localStorage.getItem("phone"));
+    console.log("Gender:", localStorage.getItem("gender"));
+
+    // Clear the input fields after submission
+    document.getElementById("registration-form").reset();
+
+    return false; // Prevent form submission for demo purposes
 }
