@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: pink;
+    background-image: url("../bilder/papel.jpg");
 }
 
 .navbar {
@@ -32,7 +32,7 @@ body {
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
-    font-size: 1rem; /* You can adjust the font size if needed */
+    font-size: 1.2rem; /* You can adjust the font size if needed */
     margin-right: 1vw;
 }
 
