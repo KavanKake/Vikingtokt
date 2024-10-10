@@ -52,6 +52,11 @@ body {
     height: 3vh; 
 }
 
+.spacer2{
+    width: 100vw; 
+    height: 2vh; 
+}
+
 .centered{
     display:flex; 
     justify-content: center; 
@@ -68,9 +73,11 @@ body {
 }
 
 .d-model{
+    display: flex;
+    justify-content: center;
     object-fit: cover; 
-    width: 40rem ;
-    height: 40rem;
+    width: 20rem ;
+    height: 35rem;
 
 }
 
