@@ -23,7 +23,7 @@ body {
   
 
 .navbar {
-    background-color: #152c5b;
+    background-color: #775944;
     overflow: hidden;
     height: 8vh;
     z-index: 2; /* Higher z-index to stay above the overlay */
@@ -51,7 +51,7 @@ body {
 
 .navbar a:hover {
     background-color: #ddd;
-    color: black;
+    color: #775944;
 }
 
 .logo_navbar {

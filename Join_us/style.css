@@ -22,7 +22,7 @@ body {
   }
 
 .navbar {
-    background-color: #333;
+    background-color: #775944;
     overflow: hidden;
     height: 8vh;
     z-index: 2; 
@@ -49,7 +49,7 @@ body {
 
 .navbar a:hover {
     background-color: #ddd;
-    color: black;
+    color: #775944;
 }
 
 .logo_navbar {
@@ -150,6 +150,7 @@ button {
 
 button:hover {
     background-color: #555; 
+    color: #e72000;
 }
 
 
