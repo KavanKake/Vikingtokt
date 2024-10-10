@@ -5,12 +5,25 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-image: url("bilder/papel.jpg");
+
 }
 
+.rosarivo-regular {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rosarivo-regular-italic {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
 .navbar {
-    background-color: #333;
+    background-color: #152c5b;
     overflow: hidden;
     height: 8vh;
     z-index: 2; /* Higher z-index to stay above the overlay */
@@ -32,6 +45,7 @@ body {
     padding: 20px 20px;
     text-decoration: none;
     font-size: 1.2rem; /* You can adjust the font size if needed */
+    font-family: "Rosarivo" ;
     margin-right: 1vw;
 }
 
@@ -70,6 +84,7 @@ body {
 
 .undertitle{
     font-size: 1.7vw; 
+    font-family: "Rosarivo"
 }
 
 .d-model{
@@ -83,8 +98,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 
-html, body { height: 100%;
-    font-family: 'Raleway', sans-serif;}
+
 
 aside {
     margin: 1vw 0 1vw 65vw;
@@ -108,7 +122,8 @@ footer {
     
     text-align: center;
     font-size: 1.3vw; 
-    
+    font-family: "Rosarivo";
+
     margin: 1vw 1.2vw;
 }
 
