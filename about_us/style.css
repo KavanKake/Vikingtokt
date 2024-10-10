@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,8 +15,9 @@ body {
     overflow: hidden;
     height: 8vh;
     z-index: 2; /* Higher z-index to stay above the overlay */
-    position: relative; /* Ensure the z-index applies correctly */
+    position: fixed; /* Ensure the z-index applies correctly */
     display: flex; /* Use flexbox */
+    width: 100%;
     justify-content: space-between; /* Center content horizontally */
     align-items: center; /* Center content vertically */
 }
@@ -46,6 +48,15 @@ body {
     justify-content: left; 
 }
 
+
+.overskrift {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+
 .container1 {
     display: flex;
     justify-content: space-around; /* Space circles evenly */
@@ -62,7 +73,7 @@ body {
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.circle {
+.circle1 {
     width: 20rem; /* Fixed width for circles */
     height: 20rem; /* Fixed height for circles */
     border-radius: 50%; /* Make the div circular */
@@ -76,9 +87,29 @@ body {
     margin: 20px; /* Margin around each circle */
 }
 
+.circle2 {
+    width: 20rem; /* Fixed width for circles */
+    height: 20rem; /* Fixed height for circles */
+    border-radius: 50%; /* Make the div circular */
+    overflow: hidden; /* Hide overflow for the image */
+    border: 2px solid #333; /* Optional border */
+    display: flex;
+    flex-direction: right; /* Stack image and caption vertically */
+    justify-content: right;
+    align-items: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 20px; /* Margin around each circle */
+
+
+}
+
+
+
 .bilde1 {
     width: 100%; /* Make the image fill the circle */
     height: auto; /* Maintain aspect ratio */
+    display: flex;
+
     
 }
 
@@ -86,13 +117,28 @@ body {
     width: 150%; /* Make the image fill the circle */
     height: auto; /* Maintain aspect ratio */
     display: flex;
+
     
     
 }
 
-.caption {
+.caption1 {
     margin-top: 10px; /* Space between image and caption */
-    text-align: center; /* Center text under the image */
+    text-align: right; /* Center text under the image */
+    justify-content: right;
     font-size: 1rem; /* Font size for captions */
     color: #333; /* Darker text color for contrast */
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.caption2 {
+    margin-top: 10px; /* Space between image and caption */
+    text-align: left; /* Center text under the image */
+    justify-content: left;
+    font-size: 1rem; /* Font size for captions */
+    color: #333; /* Darker text color for contrast */
+    width: 50%;
+    font-size: 1.5rem;
+
 }
