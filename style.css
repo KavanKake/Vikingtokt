@@ -69,7 +69,9 @@ body {
 
 .d-model{
     object-fit: cover; 
-    width: 40vw ; 
+    width: 40rem ;
+    height: 40rem;
+
 }
 
 
