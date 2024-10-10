@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden; 
 }
 
 body {
@@ -62,6 +63,10 @@ body {
     height: 75vh; 
 }
 
+.small_spacer{
+    height: 4rem; 
+}
+
 .shop{
     display: flex; 
     justify-content: space-between;
@@ -83,10 +88,13 @@ body {
 .shop_element{
     display: flex; 
     flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 100;
 
     width: 27%; 
     height: 85%; 
-    background-color: rgb(90, 58, 13);
+    background-color: rgb(179, 172, 138);
 }
 
 .shop_element > img{
