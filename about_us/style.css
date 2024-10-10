@@ -6,9 +6,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-image: url("../bilder/papel.jpg");
 }
+
+.rosarivo-regular {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rosarivo-regular-italic {
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
 
 .navbar {
     background-color: #333;
@@ -114,12 +125,9 @@ body {
 }
 
 .bilde2 {
-    width: 150%; /* Make the image fill the circle */
+    width: 100%; /* Make the image fill the circle */
     height: auto; /* Maintain aspect ratio */
     display: flex;
-
-    
-    
 }
 
 .caption1 {
@@ -150,8 +158,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 
-html, body { height: 100%;
-    font-family: 'Raleway', sans-serif;}
 
 aside {
     margin: 1vw 0 1vw 65vw;
